@@ -1,0 +1,111 @@
+# End time: 14:40:20 on Apr 10,2022, Elapsed time: 0:04:50
+# Errors: 0, Warnings: 1
+#----------------------------------------------------------------------------------------------------------
+# compile
+#----------------------------------------------------------------------------------------------------------
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/Adder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture rtl of Adder
+# 
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/ArithUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity ArithUnit
+# -- Compiling architecture rtl of ArithUnit
+# 
+# vcom -work work -2008 -explicit -stats=none TBArithUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TbArithUnit
+# -- Compiling architecture behavioural of TbArithUnit
+# 
+# vcom -work work -2008 -explicit -stats=time,-cmd,msg ConfigExU.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:40:21 on Apr 10,2022
+# -- Loading package STANDARD
+# -- Compiling configuration FuncLUSim
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity TbLogicUnit
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Loading entity LogicUnit
+# -- Compiling configuration TimeLUSim
+# -- Loading entity TbLogicUnit
+# -- Loading architecture behavioural of TbLogicUnit
+# -- Loading entity LogicUnit
+# -- Compiling configuration FuncAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Loading entity ArithUnit
+# -- Compiling configuration TimeAUSim
+# -- Loading entity TbArithUnit
+# -- Loading architecture behavioural of TbArithUnit
+# -- Loading entity ArithUnit
+# -- Compiling configuration FuncSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_SIGNED
+# -- Loading package MATH_REAL
+# -- Loading entity ShiftUnit
+# -- Compiling configuration TimeSUSim
+# -- Loading entity TbShiftUnit
+# -- Loading architecture behavioural of TbShiftUnit
+# -- Loading entity ShiftUnit
+# -- Compiling configuration FuncXUSim
+# -- Loading entity TbExecUnit
+# -- Loading architecture behavioural of TbExecUnit
+# -- Loading entity ExecUnit
+# -- Compiling configuration TimeXUSim
+# -- Loading entity TbExecUnit
+# -- Loading architecture behavioural of TbExecUnit
+# -- Loading entity ExecUnit
+# End time: 14:40:21 on Apr 10,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#----------------------------------------------------------------------------------------------------------
+# Start the simulation
+#----------------------------------------------------------------------------------------------------------
+# vsim -gui work.FuncAUSim -t 100ps
+# vsim -gui work.FuncAUSim -t 100ps 
+# Start time: 14:40:21 on Apr 10,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading synopsys.attributes
+# Loading ieee.std_logic_misc(body)
+# Loading work.funcausim
+# Loading work.tbarithunit(behavioural)
+# Loading work.arithunit(rtl)
+# Loading work.adder(rtl)
+# transcript off
+#----------------------------------------------------------------------------------------------------------
+# Simulation Run
+#----------------------------------------------------------------------------------------------------------
+# restart -f
+# run 1220 ns
+# ** Note: Using TestVectors from file ArithUnit00.tvs
+#    Time: 15 ns  Iteration: 0  Instance: /tbarithunit
+# ** Note: Simulation Completed
+#    Time: 1215 ns  Iteration: 0  Instance: /tbarithunit
+# transcript off
