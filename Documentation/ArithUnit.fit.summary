@@ -5,7 +5,7 @@ Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : ExU
 Top-level Entity Name : ArithUnit
 Family : Cyclone IV E
-Device : EP4CE115F29C7
+Device : EP4CE115F2
 Timing Models : Final
 Total logic elements : 248 / 114,480 ( < 1 % )
     Total combinational functions : 248 / 114,480 ( < 1 % )
